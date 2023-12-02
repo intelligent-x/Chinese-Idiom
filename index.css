@@ -97,7 +97,7 @@ body {
     background-color: transparent;
 
     color: #FFF;
-    font: normal 30px "宋体";
+    font: normal calc(1vw + 3vh) "宋体";
     text-align: center;
 
     border: 0;
