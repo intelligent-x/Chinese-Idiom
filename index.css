@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(45deg, #69C,
+            rgb(255, 125, 197));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    width: 80vw;
+    height: 50vh;
+
+    background-color: rgba(255, 255, 255, .1);
+    border: 2px solid #FFF;
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 15vh;
+    background-color: transparent;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    color: #FFF;
+    font: normal calc(1vw + 3vh) Consolas;
+
+    border-bottom: 1px solid #FFF;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 0 5vw;
+
+    color: #FFF;
+    font: normal calc(1vw + 3vh) "宋体";
+    text-indent: 2em;
+
+    background-color: transparent;
+}
+
+.answer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+}
+
+.answer input {
+    width: 40%;
+    height: 50%;
+
+    background-color: transparent;
+
+    color: #FFF;
+    font: normal 30px "宋体";
+    text-align: center;
+
+    border: 0;
+    border-bottom: 1px solid #FFF;
+
+    outline: none;
+}
+
+.answer button {
+    width: 20%;
+    height: 50%;
+
+    background-color: transparent;
+
+    color: #FFF;
+    font: normal calc(1vw + 3vh) "宋体";
+    text-align: center;
+
+    outline: none;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all .1s ease 0s;
+}
+
+.answer button:hover {
+
+    background-color: #FFF;
+    color: #69C;
+}
+
+.cover-true {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+
+    background-color: #69C;
+}
+
+.cover-false {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+
+    background-color: #F33;
+}
