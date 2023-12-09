@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+
+    transition: all .1s ease 0s;
 }
 
 body {
@@ -18,9 +20,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-image: linear-gradient(45deg, #69C,
-            rgb(255, 125, 197));
 
     width: 100vw;
     height: 100vh;
@@ -54,7 +53,7 @@ body {
     top: 0;
 
     color: #FFF;
-    font: normal calc(1vw + 3vh) Consolas;
+    font: normal calc(1vw + 2vh) Consolas;
 }
 
 .question {
@@ -69,7 +68,7 @@ body {
     padding: 0 10vw;
 
     color: #FFF;
-    font: normal calc(1vw + 3vh) "宋体";
+    font: normal calc(1vw + 2.5vh) "宋体";
     text-indent: 2em;
 
     background-color: transparent;
@@ -109,7 +108,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 
     color: #FFF;
-    font: normal calc(1vw + 3vh) "宋体";
+    font: normal calc(1vw + 2vh) "宋体";
     text-align: center;
 
     outline: none;
